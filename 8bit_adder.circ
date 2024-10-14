@@ -14,13 +14,22 @@
     <tool name="Tunnel">
       <a name="facing" val="south"/>
     </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
     <tool name="Constant">
       <a name="width" val="8"/>
       <a name="value" val="0xff"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
+    <tool name="AND Gate">
+      <a name="inputs" val="2"/>
+    </tool>
     <tool name="OR Gate">
+      <a name="inputs" val="2"/>
+    </tool>
+    <tool name="XOR Gate">
       <a name="inputs" val="2"/>
     </tool>
   </lib>
@@ -88,7 +97,7 @@
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 8"/>
     <appear>
-      <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="100" x="80" y="20"/>
+      <rect fill="none" height="90" stroke="#000000" stroke-width="2" width="100" x="80" y="20"/>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="160" y="30">X0</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="150" y="30">X1</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="140" y="30">X2</text>
@@ -97,14 +106,14 @@
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="110" y="30">X5</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="100" y="30">X6</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="89" y="30">X7</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="160" y="114">Y0</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="150" y="114">Y1</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="140" y="114">Y2</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="130" y="114">Y3</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="120" y="114">Y4</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="110" y="114">Y5</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="100" y="114">Y6</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="90" y="114">Y7</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="160" y="104">Y0</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="150" y="104">Y1</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="140" y="104">Y2</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="130" y="104">Y3</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="120" y="104">Y4</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="110" y="104">Y5</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="100" y="104">Y6</text>
+      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="90" y="104">Y7</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="32">O0</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="42">O1</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="52">O2</text>
@@ -113,7 +122,6 @@
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="82">O5</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="92">O6</text>
       <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="102">O7</text>
-      <text font-family="SansSerif" font-size="6" text-anchor="middle" x="170" y="113">S0</text>
       <circ-port height="8" pin="660,40" width="8" x="156" y="16"/>
       <circ-port height="8" pin="620,40" width="8" x="136" y="16"/>
       <circ-port height="8" pin="600,40" width="8" x="126" y="16"/>
@@ -121,14 +129,14 @@
       <circ-port height="8" pin="560,40" width="8" x="106" y="16"/>
       <circ-port height="8" pin="540,40" width="8" x="96" y="16"/>
       <circ-port height="8" pin="520,40" width="8" x="86" y="16"/>
-      <circ-port height="8" pin="520,370" width="8" x="86" y="116"/>
-      <circ-port height="8" pin="540,370" width="8" x="96" y="116"/>
-      <circ-port height="8" pin="560,370" width="8" x="106" y="116"/>
-      <circ-port height="8" pin="580,370" width="8" x="116" y="116"/>
-      <circ-port height="8" pin="600,370" width="8" x="126" y="116"/>
-      <circ-port height="8" pin="620,370" width="8" x="136" y="116"/>
-      <circ-port height="8" pin="640,370" width="8" x="146" y="116"/>
-      <circ-port height="8" pin="660,370" width="8" x="156" y="116"/>
+      <circ-port height="8" pin="520,370" width="8" x="86" y="106"/>
+      <circ-port height="8" pin="540,370" width="8" x="96" y="106"/>
+      <circ-port height="8" pin="560,370" width="8" x="106" y="106"/>
+      <circ-port height="8" pin="580,370" width="8" x="116" y="106"/>
+      <circ-port height="8" pin="600,370" width="8" x="126" y="106"/>
+      <circ-port height="8" pin="620,370" width="8" x="136" y="106"/>
+      <circ-port height="8" pin="640,370" width="8" x="146" y="106"/>
+      <circ-port height="8" pin="660,370" width="8" x="156" y="106"/>
       <circ-port height="10" pin="580,260" width="10" x="175" y="95"/>
       <circ-port height="10" pin="580,240" width="10" x="175" y="85"/>
       <circ-port height="10" pin="580,220" width="10" x="175" y="75"/>
@@ -138,8 +146,7 @@
       <circ-port height="10" pin="580,140" width="10" x="175" y="35"/>
       <circ-port height="10" pin="580,120" width="10" x="175" y="25"/>
       <circ-port height="8" pin="640,40" width="8" x="146" y="16"/>
-      <circ-port height="10" pin="580,280" width="10" x="175" y="105"/>
-      <circ-anchor facing="east" height="6" width="6" x="117" y="67"/>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="57"/>
     </appear>
     <wire from="(660,360)" to="(660,370)"/>
     <wire from="(660,40)" to="(660,50)"/>
@@ -228,32 +235,10 @@
     <wire from="(370,200)" to="(370,260)"/>
     <wire from="(160,140)" to="(160,260)"/>
     <wire from="(170,70)" to="(620,70)"/>
-    <wire from="(570,280)" to="(580,280)"/>
     <wire from="(570,260)" to="(580,260)"/>
     <wire from="(520,270)" to="(530,270)"/>
     <wire from="(240,270)" to="(240,330)"/>
-    <comp lib="7" loc="(480,270)" name="full_adder"/>
-    <comp lib="0" loc="(580,260)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="O7"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(560,370)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y5"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="7" loc="(200,270)" name="full_adder"/>
-    <comp lib="7" loc="(60,270)" name="full_adder"/>
-    <comp lib="0" loc="(600,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
+    <comp lib="7" loc="(550,270)" name="full_adder"/>
     <comp lib="0" loc="(580,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -261,27 +246,26 @@
       <a name="label" val="O3"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(340,270)" name="full_adder"/>
-    <comp lib="7" loc="(270,270)" name="full_adder"/>
-    <comp lib="0" loc="(580,220)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(660,370)" name="Pin">
+      <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="O5"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="Y0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(20,280)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(540,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X6"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(560,40)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="X5"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="7" loc="(550,270)" name="full_adder"/>
-    <comp lib="0" loc="(540,370)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y6"/>
-      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(620,40)" name="Pin">
       <a name="facing" val="south"/>
@@ -295,32 +279,56 @@
       <a name="label" val="Y1"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(580,280)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(580,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="O1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(660,370)" name="Pin">
+    <comp lib="0" loc="(580,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Y0"/>
+      <a name="label" val="Y4"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(560,370)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y5"/>
       <a name="labelloc" val="south"/>
     </comp>
     <comp lib="7" loc="(130,270)" name="full_adder"/>
-    <comp lib="0" loc="(580,200)" name="Pin">
+    <comp lib="7" loc="(410,270)" name="full_adder"/>
+    <comp lib="0" loc="(600,370)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y3"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(600,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(520,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X7"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(540,370)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y6"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="7" loc="(60,270)" name="full_adder"/>
+    <comp lib="0" loc="(580,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X4"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(580,220)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="O4"/>
+      <a name="label" val="O5"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(580,240)" name="Pin">
@@ -330,28 +338,6 @@
       <a name="label" val="O6"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(20,280)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(540,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X6"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(580,370)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y4"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="7" loc="(410,270)" name="full_adder"/>
-    <comp lib="0" loc="(520,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X7"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(580,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -359,36 +345,18 @@
       <a name="label" val="O0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(660,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X0"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(620,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Y2"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(580,160)" name="Pin">
+    <comp lib="0" loc="(580,140)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="O2"/>
+      <a name="label" val="O1"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(520,370)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y7"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(580,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X4"/>
-      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(640,40)" name="Pin">
       <a name="facing" val="south"/>
@@ -396,10 +364,41 @@
       <a name="label" val="X1"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(600,370)" name="Pin">
+    <comp lib="0" loc="(660,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(580,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="O4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="7" loc="(200,270)" name="full_adder"/>
+    <comp lib="7" loc="(340,270)" name="full_adder"/>
+    <comp lib="7" loc="(480,270)" name="full_adder"/>
+    <comp lib="7" loc="(270,270)" name="full_adder"/>
+    <comp lib="0" loc="(580,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="O2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(580,260)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="O7"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(520,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Y3"/>
+      <a name="label" val="Y7"/>
       <a name="labelloc" val="south"/>
     </comp>
   </circuit>
